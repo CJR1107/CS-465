@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="shell nav-shell">
+    <a class="brand" href="/" aria-label="Travlr Getaways home">
+      <img src="/images/compass.svg" alt="" width="35" height="35">
+      <span>TRAVLR<span class="brand-sub">GETAWAYS</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="/" {{#if isHome}}class="active" aria-current="page"{{/if}}>Home</a>
+      <a href="/travel" {{#if isTravel}}class="active" aria-current="page"{{/if}}>Travel</a>
+      <a href="/rooms" {{#if isRooms}}class="active" aria-current="page"{{/if}}>Rooms</a>
+      <a href="/meals" {{#if isMeals}}class="active" aria-current="page"{{/if}}>Meals</a>
+      <a href="/news" {{#if isNews}}class="active" aria-current="page"{{/if}}>News</a>
+      <a href="/about" {{#if isAbout}}class="active" aria-current="page"{{/if}}>About</a>
+      <a href="/contact" {{#if isContact}}class="active" aria-current="page"{{/if}}>Contact</a>
+    </nav>
+  </div>
+</header>

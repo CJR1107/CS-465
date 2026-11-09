@@ -1,0 +1,10 @@
+'use strict';
+const express = require('express');
+const router = express.Router();
+const ctrlPages = require('../controllers/pages');
+router.get('/rooms', ctrlPages.rooms);
+router.get('/meals', ctrlPages.meals);
+router.get('/news', ctrlPages.news);
+router.get('/about', ctrlPages.about);
+router.get('/contact', ctrlPages.contact);
+module.exports = router;

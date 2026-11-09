@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+'use strict';
+const http = require('http');
+const app = require('../app');
+const port = Number(process.env.PORT) || 3000;
+app.set('port', port);
+const server = http.createServer(app);
+server.listen(port, () => {
+  console.log(`Travlr Getaways is running at http://localhost:${port}`);
+});
+server.on('error', (error) => {
+  console.error(`Unable to start server: ${error.message}`);
+  process.exitCode = 1;
+});
