@@ -1,0 +1,41 @@
+[
+  {
+    "id": "bali",
+    "image": "/images/bali.svg",
+    "alt": "Green hills and turquoise ocean in Bali",
+    "meta": "INDONESIA · ISLAND GETAWAY",
+    "name": "Bali Island Escape",
+    "description": "Bali Island Escape offers beautiful beaches, tropical landscapes, and a chance to experience the local culture.",
+    "tags": [
+      "Beaches",
+      "Nature",
+      "Culture"
+    ]
+  },
+  {
+    "id": "santorini",
+    "image": "/images/santorini.svg",
+    "alt": "Whitewashed coastal village above the sea in Greece",
+    "meta": "GREECE · COASTAL RETREAT",
+    "name": "Santorini Coastline",
+    "description": "Santorini Coastline features seaside villages, ocean views, and the sunsets Santorini is known for.",
+    "tags": [
+      "Ocean views",
+      "Villages",
+      "Relaxation"
+    ]
+  },
+  {
+    "id": "costa-rica",
+    "image": "/images/costa-rica.svg",
+    "alt": "Rainforest and mountains in Costa Rica",
+    "meta": "COSTA RICA · ADVENTURE",
+    "name": "Costa Rica Discovery",
+    "description": "Costa Rica Discovery takes travelers through lush rainforests, local wildlife, and outdoor adventures.",
+    "tags": [
+      "Rainforest",
+      "Wildlife",
+      "Adventure"
+    ]
+  }
+]

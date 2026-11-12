@@ -18,6 +18,7 @@ const pages = [
   'app_server/views/layouts/layout.hbs'
 ];
 const servedRoutes = new Set(['/', '/travel', '/rooms', '/meals', '/news', '/about', '/contact']);
+const tripIds = new Set(require('../data/trips.json').map(trip => trip.id));
 
 test('internal links, images, and stylesheets have valid targets', () => {
   for (const page of pages) {
@@ -28,12 +29,16 @@ test('internal links, images, and stylesheets have valid targets', () => {
       const [route, fragment] = target.split('#');
       if (servedRoutes.has(route)) {
         if (fragment) {
-          const viewName = route === '/travel' ? 'travel' : 'index';
-          const content = fs.readFileSync(path.join(root, 'app_server', 'views', `${viewName}.hbs`), 'utf8');
-          assert.ok(content.includes(`id="${fragment}"`), `${page}: missing anchor ${target}`);
+          if (route === '/travel') {
+            assert.ok(tripIds.has(fragment), `${page}: missing dynamic trip ${target}`);
+          } else {
+            const viewName = route === '/' ? 'index' : route.slice(1);
+            const content = fs.readFileSync(path.join(root, 'app_server', 'views', `${viewName}.hbs`), 'utf8');
+            assert.ok(content.includes(`id="${fragment}"`), `${page}: missing anchor ${target}`);
+          }
         }
       } else {
-        assert.ok(fs.existsSync(path.join(root, 'public', route)), `${page}: missing asset ${target}`);
+        assert.ok(fs.existsSync(path.join(root, 'public', route.slice(1))), `${page}: missing asset ${target}`);
       }
     }
   }

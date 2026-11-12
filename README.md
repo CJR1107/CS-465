@@ -1,19 +1,27 @@
-# Travlr Getaways
+# Travlr Getaways — Module Three
 
-Module Two MVC routing with Express and Handlebars.
+Customer-facing Express site using MVC routes, Handlebars templates, and JSON travel data.
 
-## Running the site
+## Run
 
-With Node.js installed, run `npm install` and `npm start` in the project folder. Then open `http://localhost:3000/travel` in a browser.
+1. Open a terminal in the `travlr` folder.
+2. Run `npm install`.
+3. Run `npm start`.
+4. Visit `http://localhost:3000/travel`.
 
-Run `npm test` to check the application structure and route definitions.
+Run `npm test` to check routes, templates, links, and JSON trip data.
 
-## Folder organization
+## Files
 
-- `app.js`: Express configuration and route registration
-- `app_server/controllers`: handlers that render each page
-- `app_server/routes`: URLs assigned to the controllers
-- `app_server/views`: Handlebars views, layout, header and footer partials
-- `public`: styles, images and the earlier static travel page
+- `data/trips.json` stores the three sample travel packages.
+- `app_server/controllers/travel.js` reads the JSON and sends `trips` to the view.
+- `app_server/views/travel.hbs` uses `{{#each trips}}` to generate the trip cards.
+- `app_server/routes` maps each URL to a controller.
+- `app_server/views/partials` contains shared header and footer templates.
+- `public` contains the site's CSS and images.
 
-The `/travel` route renders `app_server/views/travel.hbs`. The header and footer partials are shared by the Handlebars pages.
+The travel page now displays its trip information from JSON rather than hard-coded entries. Reading the file per request is for this module's prototype; a database will replace it in later modules.
+
+## GitHub
+
+Create the `module3` branch in your existing course repository, copy these updated project files into your repository, then commit and push `module3`.

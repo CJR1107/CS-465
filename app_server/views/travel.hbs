@@ -18,38 +18,18 @@
     </div>
 
     <div class="travel-list">
-      <article class="travel-item" id="bali">
-        <img src="/images/bali.svg" alt="Green hills and turquoise ocean in Bali">
+      {{#each trips}}
+      <article class="travel-item" id="{{id}}">
+        <img src="{{image}}" alt="{{alt}}">
         <div class="travel-content">
-          <div class="meta">INDONESIA · ISLAND GETAWAY</div>
-          <h3>Bali Island Escape</h3>
-          <p>Relax on beautiful beaches, explore tropical landscapes, and experience the local culture.</p>
-          <div class="tag-row"><span>Beaches</span><span>Nature</span><span>Culture</span></div>
+          <div class="meta">{{meta}}</div>
+          <h3>{{name}}</h3>
+          <p>{{description}}</p>
+          <div class="tag-row">{{#each tags}}<span>{{this}}</span>{{/each}}</div>
           <a class="text-link" href="/contact">Learn more <span aria-hidden="true">→</span></a>
         </div>
       </article>
-
-      <article class="travel-item" id="santorini">
-        <img src="/images/santorini.svg" alt="Whitewashed coastal village above the sea in Greece">
-        <div class="travel-content">
-          <div class="meta">GREECE · COASTAL RETREAT</div>
-          <h3>Santorini Coastline</h3>
-          <p>Walk through seaside villages and enjoy the ocean views and sunsets Santorini is known for.</p>
-          <div class="tag-row"><span>Ocean views</span><span>Villages</span><span>Relaxation</span></div>
-          <a class="text-link" href="/contact">Learn more <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-
-      <article class="travel-item" id="costa-rica">
-        <img src="/images/costa-rica.svg" alt="Rainforest and mountains in Costa Rica">
-        <div class="travel-content">
-          <div class="meta">COSTA RICA · ADVENTURE</div>
-          <h3>Costa Rica Discovery</h3>
-          <p>Visit lush rainforests, discover local wildlife, and enjoy outdoor adventures in Costa Rica.</p>
-          <div class="tag-row"><span>Rainforest</span><span>Wildlife</span><span>Adventure</span></div>
-          <a class="text-link" href="/contact">Learn more <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
+      {{/each}}
     </div>
   </section>
 </main>
