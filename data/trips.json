@@ -1,10 +1,16 @@
+
 [
   {
     "id": "bali",
+    "code": "BALI270101",
+    "name": "Bali Island Escape",
+    "length": "6 nights / 7 days",
+    "start": "2027-01-01T08:00:00Z",
+    "resort": "Bali Beach Resort, 4 stars",
+    "perPerson": "1299.00",
     "image": "/images/bali.svg",
     "alt": "Green hills and turquoise ocean in Bali",
     "meta": "INDONESIA · ISLAND GETAWAY",
-    "name": "Bali Island Escape",
     "description": "Bali Island Escape offers beautiful beaches, tropical landscapes, and a chance to experience the local culture.",
     "tags": [
       "Beaches",
@@ -14,10 +20,15 @@
   },
   {
     "id": "santorini",
+    "code": "SANT270215",
+    "name": "Santorini Coastline",
+    "length": "5 nights / 6 days",
+    "start": "2027-02-15T08:00:00Z",
+    "resort": "Santorini Coastal Resort, 4 stars",
+    "perPerson": "1599.00",
     "image": "/images/santorini.svg",
     "alt": "Whitewashed coastal village above the sea in Greece",
     "meta": "GREECE · COASTAL RETREAT",
-    "name": "Santorini Coastline",
     "description": "Santorini Coastline features seaside villages, ocean views, and the sunsets Santorini is known for.",
     "tags": [
       "Ocean views",
@@ -27,10 +38,15 @@
   },
   {
     "id": "costa-rica",
+    "code": "COST270310",
+    "name": "Costa Rica Discovery",
+    "length": "7 nights / 8 days",
+    "start": "2027-03-10T08:00:00Z",
+    "resort": "Costa Rica Rainforest Resort, 4 stars",
+    "perPerson": "1399.00",
     "image": "/images/costa-rica.svg",
     "alt": "Rainforest and mountains in Costa Rica",
     "meta": "COSTA RICA · ADVENTURE",
-    "name": "Costa Rica Discovery",
     "description": "Costa Rica Discovery takes travelers through lush rainforests, local wildlife, and outdoor adventures.",
     "tags": [
       "Rainforest",

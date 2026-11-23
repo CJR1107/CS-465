@@ -1,4 +1,6 @@
 'use strict';
+require('./app_server/models/db');
+
 const express = require('express');
 const path = require('path');
 const hbs = require('hbs');
